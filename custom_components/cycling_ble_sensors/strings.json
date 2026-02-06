@@ -1,0 +1,15 @@
+{
+  "config": {
+    "flow_title": "{name}",
+    "step": {
+      "bluetooth_confirm": {
+        "description": "Set up {name} as a Cycling BLE Sensor?"
+      }
+    },
+    "abort": {
+      "already_configured": "Device is already configured",
+      "not_supported": "Device is not supported",
+      "bluetooth_only": "This integration only supports setup via Bluetooth discovery"
+    }
+  }
+}

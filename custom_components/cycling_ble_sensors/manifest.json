@@ -1,0 +1,15 @@
+{
+  "domain": "cycling_ble_sensors",
+  "name": "Cycling BLE Sensors",
+  "version": "0.1.0",
+  "integration_type": "hub",
+  "iot_class": "local_polling",
+  "dependencies": ["bluetooth"],
+  "requirements": [],
+  "bluetooth": [
+    {"local_name": "Ion*", "connectable": true}
+  ],
+  "config_flow": true,
+  "codeowners": ["@ademasi"],
+  "documentation": "https://github.com/ademasi/cycling-ble-sensors"
+}

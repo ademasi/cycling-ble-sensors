@@ -25,13 +25,13 @@ Copy `custom_components/cycling_ble_sensors/` to your Home Assistant `custom_com
 
 ## Setup
 
-The integration uses Bluetooth discovery. When your device is in range:
+The integration supports both automatic discovery and manual setup.
 
-1. Home Assistant will show a notification: "Cycling BLE Sensors discovered [device name]"
-2. Click **Configure** and confirm
-3. A battery sensor will appear (e.g., `sensor.ion_200_rt_battery`)
+**Automatic:** When your device is in range, Home Assistant will show a discovery notification. Click **Configure** and confirm.
 
-The battery level is polled every 10 minutes via an active BLE connection.
+**Manual:** Go to **Settings → Devices & Services → Add Integration**, search for "Cycling BLE Sensors", and select your device from the list of discovered BLE devices.
+
+A battery sensor will appear (e.g., `sensor.ion_200_rt_battery`), polled every 10 minutes via an active BLE connection.
 
 ## Adding Device Support
 
